@@ -35,8 +35,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self cameraDistrict];
     [self.view addSubview:self.shotButton];
+    [self layoutSubviews];
 }
 
+- (void)layoutSubviews{
+    [_shotButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(self.view);
+        make.bottom.mas_equalTo(self.view).offset(-50);
+        make.width.height.mas_equalTo(80);
+    }];
+}
 - (void)cameraDistrict{
     //创建输入设备
     self.device = [self cameraWithPosition:AVCaptureDevicePositionBack];
@@ -81,9 +89,13 @@
 - (UIButton *)shotButton{
     if (!_shotButton) {
         _shotButton = [[UIButton alloc]init];
-        _shotButton.backgroundColor = [UIColor blackColor];
-        _shotButton.frame = CGRectMake(kScreenWidth/2, kScreenHeight/2, 60, 60);
+        [_shotButton setImage:[UIImage imageNamed:@"camera"] forState:UIControlStateNormal];
+        _shotButton.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];;
+        _shotButton.layer.cornerRadius = 30;
+        _shotButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15);
+        _shotButton.layer.masksToBounds = YES;
         [_shotButton addTarget:self action:@selector(shotAction:) forControlEvents:UIControlEventTouchUpInside];
+        
     }
     return _shotButton;
 }
