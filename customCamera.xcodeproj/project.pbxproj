@@ -15,7 +15,10 @@
 		21FF011F1FBC1D1600F1B26A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF011E1FBC1D1600F1B26A /* main.m */; };
 		21FF01291FBC1D1600F1B26A /* customCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01281FBC1D1600F1B26A /* customCameraTests.m */; };
 		21FF01341FBC1D1600F1B26A /* customCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01331FBC1D1600F1B26A /* customCameraUITests.m */; };
-		227CA7B31FBC82FE00C97CCF /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 227CA7B21FBC82FD00C97CCF /* camera.png */; };
+		225FC0EB1FBDBD2E00971909 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EA1FBDBD2E00971909 /* camera.png */; };
+		225FC0ED1FBDBFC300971909 /* switchCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EC1FBDBFC300971909 /* switchCamera.png */; };
+		225FC0F01FBDC65400971909 /* lightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EE1FBDC65300971909 /* lightOff.png */; };
+		225FC0F11FBDC65400971909 /* lightOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EF1FBDC65400971909 /* lightOn.png */; };
 		BDA04FC463479A4536EEC476 /* libPods-customCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A74A2526A969841F7E96B23E /* libPods-customCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +57,11 @@
 		21FF012F1FBC1D1600F1B26A /* customCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FF01331FBC1D1600F1B26A /* customCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customCameraUITests.m; sourceTree = "<group>"; };
 		21FF01351FBC1D1600F1B26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225FC0EA1FBDBD2E00971909 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		225FC0EC1FBDBFC300971909 /* switchCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchCamera.png; sourceTree = "<group>"; };
+		225FC0EE1FBDC65300971909 /* lightOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightOff.png; sourceTree = "<group>"; };
+		225FC0EF1FBDC65400971909 /* lightOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightOn.png; sourceTree = "<group>"; };
 		227CA7B11FBC795200C97CCF /* customCamera.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = customCamera.pch; sourceTree = "<group>"; };
-		227CA7B21FBC82FD00C97CCF /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		A74A2526A969841F7E96B23E /* libPods-customCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-customCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D7F59998FE9045CA37F363 /* Pods-customCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-customCamera/Pods-customCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,9 +117,12 @@
 		21FF010E1FBC1D1600F1B26A /* customCamera */ = {
 			isa = PBXGroup;
 			children = (
+				225FC0EE1FBDC65300971909 /* lightOff.png */,
+				225FC0EF1FBDC65400971909 /* lightOn.png */,
+				225FC0EC1FBDBFC300971909 /* switchCamera.png */,
+				225FC0EA1FBDBD2E00971909 /* camera.png */,
 				21FF010F1FBC1D1600F1B26A /* AppDelegate.h */,
 				21FF01101FBC1D1600F1B26A /* AppDelegate.m */,
-				227CA7B21FBC82FD00C97CCF /* camera.png */,
 				21FF01121FBC1D1600F1B26A /* ViewController.h */,
 				21FF01131FBC1D1600F1B26A /* ViewController.m */,
 				21FF01151FBC1D1600F1B26A /* Main.storyboard */,
@@ -270,10 +279,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227CA7B31FBC82FE00C97CCF /* camera.png in Resources */,
 				21FF011C1FBC1D1600F1B26A /* LaunchScreen.storyboard in Resources */,
+				225FC0F11FBDC65400971909 /* lightOn.png in Resources */,
+				225FC0EB1FBDBD2E00971909 /* camera.png in Resources */,
+				225FC0F01FBDC65400971909 /* lightOff.png in Resources */,
 				21FF01191FBC1D1600F1B26A /* Assets.xcassets in Resources */,
 				21FF01171FBC1D1600F1B26A /* Main.storyboard in Resources */,
+				225FC0ED1FBDBFC300971909 /* switchCamera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +529,7 @@
 				GCC_PREFIX_HEADER = customCamera/customCamera.pch;
 				INFOPLIST_FILE = customCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wan.test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wan.test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,7 +545,7 @@
 				GCC_PREFIX_HEADER = customCamera/customCamera.pch;
 				INFOPLIST_FILE = customCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wan.test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wan.test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
