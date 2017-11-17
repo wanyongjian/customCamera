@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217BF5EC1FBE867A00885DC2 /* FilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217BF5EB1FBE867A00885DC2 /* FilterController.m */; };
 		21FF01111FBC1D1600F1B26A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01101FBC1D1600F1B26A /* AppDelegate.m */; };
 		21FF01141FBC1D1600F1B26A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01131FBC1D1600F1B26A /* ViewController.m */; };
 		21FF01171FBC1D1600F1B26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FF01151FBC1D1600F1B26A /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		1B7E8B95B0E819CF8DBDADF7 /* Pods-customCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customCamera/Pods-customCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		217BF5EA1FBE867A00885DC2 /* FilterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterController.h; sourceTree = "<group>"; };
+		217BF5EB1FBE867A00885DC2 /* FilterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterController.m; sourceTree = "<group>"; };
 		21FF010C1FBC1D1600F1B26A /* customCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FF010F1FBC1D1600F1B26A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21FF01101FBC1D1600F1B26A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				21FF01101FBC1D1600F1B26A /* AppDelegate.m */,
 				21FF01121FBC1D1600F1B26A /* ViewController.h */,
 				21FF01131FBC1D1600F1B26A /* ViewController.m */,
+				217BF5EA1FBE867A00885DC2 /* FilterController.h */,
+				217BF5EB1FBE867A00885DC2 /* FilterController.m */,
 				21FF01151FBC1D1600F1B26A /* Main.storyboard */,
 				21FF01181FBC1D1600F1B26A /* Assets.xcassets */,
 				21FF011A1FBC1D1600F1B26A /* LaunchScreen.storyboard */,
@@ -361,6 +366,7 @@
 				21FF01141FBC1D1600F1B26A /* ViewController.m in Sources */,
 				21FF011F1FBC1D1600F1B26A /* main.m in Sources */,
 				21FF01111FBC1D1600F1B26A /* AppDelegate.m in Sources */,
+				217BF5EC1FBE867A00885DC2 /* FilterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
