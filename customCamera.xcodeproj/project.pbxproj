@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		217BF5EC1FBE867A00885DC2 /* FilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217BF5EB1FBE867A00885DC2 /* FilterController.m */; };
+		217BF5FD1FBEA61800885DC2 /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = 217BF5FC1FBEA61800885DC2 /* water.png */; };
 		21FF01111FBC1D1600F1B26A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01101FBC1D1600F1B26A /* AppDelegate.m */; };
 		21FF01141FBC1D1600F1B26A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01131FBC1D1600F1B26A /* ViewController.m */; };
 		21FF01171FBC1D1600F1B26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FF01151FBC1D1600F1B26A /* Main.storyboard */; };
@@ -44,6 +45,14 @@
 		1B7E8B95B0E819CF8DBDADF7 /* Pods-customCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customCamera/Pods-customCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		217BF5EA1FBE867A00885DC2 /* FilterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterController.h; sourceTree = "<group>"; };
 		217BF5EB1FBE867A00885DC2 /* FilterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterController.m; sourceTree = "<group>"; };
+		217BF5EE1FBE8B0F00885DC2 /* libGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGPUImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		217BF5F01FBE8B4C00885DC2 /* libGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGPUImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		217BF5F11FBE8B5400885DC2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		217BF5F31FBE8B5C00885DC2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		217BF5F51FBE8B6400885DC2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		217BF5F71FBE8B6A00885DC2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		217BF5F91FBE8B7000885DC2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		217BF5FC1FBEA61800885DC2 /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
 		21FF010C1FBC1D1600F1B26A /* customCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FF010F1FBC1D1600F1B26A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21FF01101FBC1D1600F1B26A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +129,7 @@
 		21FF010E1FBC1D1600F1B26A /* customCamera */ = {
 			isa = PBXGroup;
 			children = (
+				217BF5FC1FBEA61800885DC2 /* water.png */,
 				225FC0EE1FBDC65300971909 /* lightOff.png */,
 				225FC0EF1FBDC65400971909 /* lightOn.png */,
 				225FC0EC1FBDBFC300971909 /* switchCamera.png */,
@@ -161,6 +171,13 @@
 		8C84ABE9D7340BA6C4B168B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				217BF5F91FBE8B7000885DC2 /* QuartzCore.framework */,
+				217BF5F71FBE8B6A00885DC2 /* AVFoundation.framework */,
+				217BF5F51FBE8B6400885DC2 /* OpenGLES.framework */,
+				217BF5F31FBE8B5C00885DC2 /* CoreVideo.framework */,
+				217BF5F11FBE8B5400885DC2 /* CoreMedia.framework */,
+				217BF5F01FBE8B4C00885DC2 /* libGPUImage.a */,
+				217BF5EE1FBE8B0F00885DC2 /* libGPUImage.a */,
 				A74A2526A969841F7E96B23E /* libPods-customCamera.a */,
 			);
 			name = Frameworks;
@@ -291,6 +308,7 @@
 				21FF01191FBC1D1600F1B26A /* Assets.xcassets in Resources */,
 				21FF01171FBC1D1600F1B26A /* Main.storyboard in Resources */,
 				225FC0ED1FBDBFC300971909 /* switchCamera.png in Resources */,
+				217BF5FD1FBEA61800885DC2 /* water.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
