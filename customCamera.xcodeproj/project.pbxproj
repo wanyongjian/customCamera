@@ -17,6 +17,7 @@
 		21FF011F1FBC1D1600F1B26A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF011E1FBC1D1600F1B26A /* main.m */; };
 		21FF01291FBC1D1600F1B26A /* customCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01281FBC1D1600F1B26A /* customCameraTests.m */; };
 		21FF01341FBC1D1600F1B26A /* customCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01331FBC1D1600F1B26A /* customCameraUITests.m */; };
+		225A30BA1FC8410B00685B4D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225A30B91FC8410A00685B4D /* opencv2.framework */; };
 		225FC0EB1FBDBD2E00971909 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EA1FBDBD2E00971909 /* camera.png */; };
 		225FC0ED1FBDBFC300971909 /* switchCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EC1FBDBFC300971909 /* switchCamera.png */; };
 		225FC0F01FBDC65400971909 /* lightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EE1FBDC65300971909 /* lightOff.png */; };
@@ -69,6 +70,7 @@
 		21FF012F1FBC1D1600F1B26A /* customCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FF01331FBC1D1600F1B26A /* customCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customCameraUITests.m; sourceTree = "<group>"; };
 		21FF01351FBC1D1600F1B26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225A30B91FC8410A00685B4D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		225FC0EA1FBDBD2E00971909 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		225FC0EC1FBDBFC300971909 /* switchCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchCamera.png; sourceTree = "<group>"; };
 		225FC0EE1FBDC65300971909 /* lightOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightOff.png; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225A30BA1FC8410B00685B4D /* opencv2.framework in Frameworks */,
 				BDA04FC463479A4536EEC476 /* libPods-customCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +174,7 @@
 		8C84ABE9D7340BA6C4B168B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				225A30B91FC8410A00685B4D /* opencv2.framework */,
 				217BF5F91FBE8B7000885DC2 /* QuartzCore.framework */,
 				217BF5F71FBE8B6A00885DC2 /* AVFoundation.framework */,
 				217BF5F51FBE8B6400885DC2 /* OpenGLES.framework */,
@@ -550,6 +554,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2QMMRR2HG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = customCamera/customCamera.pch;
 				INFOPLIST_FILE = customCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -566,6 +574,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2QMMRR2HG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = customCamera/customCamera.pch;
 				INFOPLIST_FILE = customCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
