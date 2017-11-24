@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		217BF5EC1FBE867A00885DC2 /* FilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217BF5EB1FBE867A00885DC2 /* FilterController.m */; };
 		217BF5FD1FBEA61800885DC2 /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = 217BF5FC1FBEA61800885DC2 /* water.png */; };
 		21FF01111FBC1D1600F1B26A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01101FBC1D1600F1B26A /* AppDelegate.m */; };
 		21FF01141FBC1D1600F1B26A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01131FBC1D1600F1B26A /* ViewController.m */; };
@@ -18,6 +17,10 @@
 		21FF01291FBC1D1600F1B26A /* customCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01281FBC1D1600F1B26A /* customCameraTests.m */; };
 		21FF01341FBC1D1600F1B26A /* customCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF01331FBC1D1600F1B26A /* customCameraUITests.m */; };
 		225A30BA1FC8410B00685B4D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225A30B91FC8410A00685B4D /* opencv2.framework */; };
+		225A30BB1FC8480F00685B4D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217BF5F31FBE8B5C00885DC2 /* CoreVideo.framework */; };
+		225A30BC1FC8481500685B4D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217BF5F11FBE8B5400885DC2 /* CoreMedia.framework */; };
+		225A30BF1FC84A9200685B4D /* FilterController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 225A30BE1FC84A9100685B4D /* FilterController.mm */; };
+		225A30C01FC84B8300685B4D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225A30BD1FC8481C00685B4D /* AssetsLibrary.framework */; };
 		225FC0EB1FBDBD2E00971909 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EA1FBDBD2E00971909 /* camera.png */; };
 		225FC0ED1FBDBFC300971909 /* switchCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EC1FBDBFC300971909 /* switchCamera.png */; };
 		225FC0F01FBDC65400971909 /* lightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 225FC0EE1FBDC65300971909 /* lightOff.png */; };
@@ -45,7 +48,6 @@
 /* Begin PBXFileReference section */
 		1B7E8B95B0E819CF8DBDADF7 /* Pods-customCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customCamera/Pods-customCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		217BF5EA1FBE867A00885DC2 /* FilterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterController.h; sourceTree = "<group>"; };
-		217BF5EB1FBE867A00885DC2 /* FilterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterController.m; sourceTree = "<group>"; };
 		217BF5EE1FBE8B0F00885DC2 /* libGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGPUImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		217BF5F01FBE8B4C00885DC2 /* libGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGPUImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		217BF5F11FBE8B5400885DC2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,8 @@
 		21FF01331FBC1D1600F1B26A /* customCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customCameraUITests.m; sourceTree = "<group>"; };
 		21FF01351FBC1D1600F1B26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		225A30B91FC8410A00685B4D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		225A30BD1FC8481C00685B4D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		225A30BE1FC84A9100685B4D /* FilterController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FilterController.mm; sourceTree = "<group>"; };
 		225FC0EA1FBDBD2E00971909 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		225FC0EC1FBDBFC300971909 /* switchCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchCamera.png; sourceTree = "<group>"; };
 		225FC0EE1FBDC65300971909 /* lightOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightOff.png; sourceTree = "<group>"; };
@@ -85,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225A30C01FC84B8300685B4D /* AssetsLibrary.framework in Frameworks */,
+				225A30BC1FC8481500685B4D /* CoreMedia.framework in Frameworks */,
+				225A30BB1FC8480F00685B4D /* CoreVideo.framework in Frameworks */,
 				225A30BA1FC8410B00685B4D /* opencv2.framework in Frameworks */,
 				BDA04FC463479A4536EEC476 /* libPods-customCamera.a in Frameworks */,
 			);
@@ -142,7 +149,7 @@
 				21FF01121FBC1D1600F1B26A /* ViewController.h */,
 				21FF01131FBC1D1600F1B26A /* ViewController.m */,
 				217BF5EA1FBE867A00885DC2 /* FilterController.h */,
-				217BF5EB1FBE867A00885DC2 /* FilterController.m */,
+				225A30BE1FC84A9100685B4D /* FilterController.mm */,
 				21FF01151FBC1D1600F1B26A /* Main.storyboard */,
 				21FF01181FBC1D1600F1B26A /* Assets.xcassets */,
 				21FF011A1FBC1D1600F1B26A /* LaunchScreen.storyboard */,
@@ -174,6 +181,7 @@
 		8C84ABE9D7340BA6C4B168B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				225A30BD1FC8481C00685B4D /* AssetsLibrary.framework */,
 				225A30B91FC8410A00685B4D /* opencv2.framework */,
 				217BF5F91FBE8B7000885DC2 /* QuartzCore.framework */,
 				217BF5F71FBE8B6A00885DC2 /* AVFoundation.framework */,
@@ -386,9 +394,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FF01141FBC1D1600F1B26A /* ViewController.m in Sources */,
+				225A30BF1FC84A9200685B4D /* FilterController.mm in Sources */,
 				21FF011F1FBC1D1600F1B26A /* main.m in Sources */,
 				21FF01111FBC1D1600F1B26A /* AppDelegate.m in Sources */,
-				217BF5EC1FBE867A00885DC2 /* FilterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,3 @@
-/Versions/A/opencv2
 *~
 *.o
 *.lo
@@ -12,7 +11,7 @@
 *.pyc
 *.py
 .svn
-.DS_Store
+*/.DS_Store
 .Trashes
 *.swp
 *.lock
@@ -30,3 +29,5 @@ build/
 *.xccheckout
 xcuserdata/
 *.moved-aside
+*.UserInterfaceState.xcuserstate
+Versions/A/opencv2
